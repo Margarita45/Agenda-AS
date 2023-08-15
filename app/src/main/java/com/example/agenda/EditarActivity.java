@@ -57,6 +57,8 @@ public class EditarActivity extends AppCompatActivity {
 
                     if (correcto) {
                         Toast.makeText(EditarActivity.this, "REGISTRO ACTUALIZADO", Toast.LENGTH_LONG).show();
+                        Intent intent =new Intent(EditarActivity.this, MainActivity.class);
+                        startActivity(intent);
                         verRegistro();
                     } else {
                         Toast.makeText(EditarActivity.this, "ERROR AL ACTUALIZAR", Toast.LENGTH_LONG).show();
